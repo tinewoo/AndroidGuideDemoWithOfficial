@@ -5,4 +5,18 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="TextViewTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="ButtonNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <!--<item name="android:layout_margin">@dimen/dimen_5dp</item>-->
+    </style>
+
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--  根目录  -->
     <string-array name="main_catalogue">
         <item>Android入门基础：从这里开始</item>
         <item>Android分享操作</item>
@@ -22,6 +23,8 @@
 
     </string-array>
 
+    <!--  第二层  -->
+
     <string-array name="detail_catalogue1">
         <item>建立你的第一个App</item>
         <item>添加ActionBar</item>
@@ -30,6 +33,7 @@
         <item>使用Fragment建立动态的UI</item>
         <item>数据保存</item>
         <item>与其他应用的交互</item>
+        <item>系统运行权限</item>     <!--  新文档  !-->
 
     </string-array>
 
@@ -50,6 +54,7 @@
     <string-array name="detail_catalogue4">
         <item>高效显示Bitmap</item>
         <item>使用OpenGL ES显示图像</item>
+        <item>动画视图使用场景和转换</item>    <!--  新文档  !-->
         <item>添加动画</item>
 
     </string-array>
@@ -167,13 +172,74 @@
 
     </string-array>
 
-    <!-- Intent Action Name -->
-
-    <string-array name="intent_action1_6">
-        <item>official.guide.savingdata.preferences</item>
-        <item>official.guide.savingdata.file</item>
-        <item>official.guide.savingdata.database</item>
+    <string-array name="interactingwithotherapps">
+        <item>Sending the User to Another App</item>
+        <item>Getting a Result from an Activity</item>
+        <item>Allowing Other Apps to Start Your Activity</item>
 
     </string-array>
+
+    <!-- Intent Action Name -->
+
+    <string-array name="intent_action_gettingstart">
+
+        <item>official.guide.buildfirstapp</item>
+        <item>official.guide.addactionbar</item>
+        <item>official.guide.differentdevices</item>
+        <item>official.guide.managingtheactivitylifecycle</item>
+        <item>official.guide.buildingdynamicfragments</item>
+
+        <item>official.guide.savingdata</item>
+        <item>official.guide.interactingotherapps</item>
+        <item>official.guide.systempermissions</item>
+
+    </string-array>
+
+    <string-array name="intent_action_appcontentsharing">
+
+        <item>official.guide.sharingsimpledata</item>
+        <item>official.guide.sharingfile</item>
+        <item>official.guide.addeasyshareaction</item>
+
+    </string-array>
+
+    <string-array name="intent_action_multimedia">
+
+        <item>official.guide.managingaudioplayback</item>
+        <item>official.guide.capturingphotos</item>
+        <item>official.guide.printingcontent</item>
+
+    </string-array>
+
+    <string-array name="intent_action_graphicsandanimation">
+
+        <item>official.guide.displayingbitmapsefficiently</item>
+        <item>official.guide.displayinggraphicswithopengles</item>
+        <item>official.guide.animatingviewsusingscenesandtransitions</item>
+        <item>official.guide.addinganimations</item>
+
+    </string-array>
+
+
+
+    <string-array name="intent_action1">
+
+        <item>official.guide.buildfirstapp</item>
+        <item>official.guide.addactionbar</item>
+        <item>official.guide.differentdevices</item>
+        <item>official.guide.managingtheactivitylifecycle</item>
+        <item>official.guide.buildingdynamicfragments</item>
+
+        <item>official.guide.savingdata</item>
+        <item>official.guide.interactingotherapps</item>
+
+    </string-array>
+
+    <!--<string-array name="intent_action1_6">-->
+        <!--<item>official.guide.savingdata.preferences</item>-->
+        <!--<item>official.guide.savingdata.file</item>-->
+        <!--<item>official.guide.savingdata.database</item>-->
+
+    <!--</string-array>-->
 
 </resources>
