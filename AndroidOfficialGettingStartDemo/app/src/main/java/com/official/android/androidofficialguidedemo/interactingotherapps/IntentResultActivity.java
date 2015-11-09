@@ -46,7 +46,7 @@ public class IntentResultActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void getContact(View v){
+    public void getContact(View v){
         pickContact();
     }
 

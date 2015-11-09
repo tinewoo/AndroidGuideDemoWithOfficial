@@ -50,7 +50,7 @@ public class SavingDatabaseActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void insertSQLLiteData(View v){
+    protected void insertSQLLiteData(View v){
 
         String id = "id1",title = "title1", content = "content1";
 
@@ -71,7 +71,7 @@ public class SavingDatabaseActivity extends AppCompatActivity {
                 values);
     }
 
-    private void querySQLLiteData(View v){
+    protected void querySQLLiteData(View v){
 
         String[] selectionArgs = null;
         String selection = null;
@@ -107,7 +107,7 @@ public class SavingDatabaseActivity extends AppCompatActivity {
         );
     }
 
-    private void deleteSQLLiteData(View v){
+    protected void deleteSQLLiteData(View v){
 
         String rowId = "id1";
 
@@ -127,7 +127,7 @@ public class SavingDatabaseActivity extends AppCompatActivity {
         }
     }
 
-    private void updateSQLLiteData(View v){
+    protected void updateSQLLiteData(View v){
 
         String rowId = "id1";
         String title = "title2";

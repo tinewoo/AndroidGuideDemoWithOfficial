@@ -13,7 +13,9 @@ import android.widget.ListView;
 public class MainCatalogueActivity extends AppCompatActivity {
 
     private ListView lv_main_catalogue;
-    public static final String ARRAYRESOURCES = "arrayResources";
+    public static final String ARRAYRESOURCES = "arrayResources";//list item
+    public static final String ARRAY_INTENT_ACTION = "arrayIntentAction";//intent
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,8 @@ public class MainCatalogueActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainCatalogueActivity.this, DetailCatalogueActivity.class);
                 Bundle bundle = new Bundle();
                 switch (position){
-                    case 0: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue1); break;
+                    case 0: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue1);
+                        bundle.putInt(ARRAY_INTENT_ACTION, R.array.intent_action_gettingstart); break;
                     case 1: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue2); break;
                     case 2: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue3); break;
                     case 3: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue4); break;

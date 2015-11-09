@@ -30,6 +30,7 @@ public class SendingUserAnotherAppActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sending_user_another_app);
+        initView();
     }
 
 
@@ -84,6 +85,7 @@ public class SendingUserAnotherAppActivity extends Activity {
                 case R.id.bt_talkphone:
                     Uri number = Uri.parse("tel:5551234");
                     Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
+                    startActivity(callIntent);
                     break;
                 case R.id.bt_searchmap: {
                     // Map point based on address
@@ -91,11 +93,13 @@ public class SendingUserAnotherAppActivity extends Activity {
                     // Or map point based on latitude/longitude
                     // Uri location = Uri.parse("geo:37.422219,-122.08364?z=14"); // z param is zoom level
                     Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+                    startActivity(mapIntent);
                     break;
                 }
                 case R.id.bt_searchweb:
                     Uri webpage = Uri.parse("http://www.android.com");
                     Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                    startActivity(webIntent);
                     break;
                 case R.id.bt_sendemail:
                     Intent emailIntent = new Intent(Intent.ACTION_SEND);
@@ -106,6 +110,7 @@ public class SendingUserAnotherAppActivity extends Activity {
                     emailIntent.putExtra(Intent.EXTRA_TEXT, "Email message text");
                     emailIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("content://path/to/email/attachment"));
                     // You can also attach multiple items by passing an ArrayList of Uris
+                    startActivity(emailIntent);
                     break;
                 case R.id.bt_intentcalendar:
                     intentcalendar();
@@ -139,10 +144,13 @@ public class SendingUserAnotherAppActivity extends Activity {
 //                    ...
 
                     // Always use string resources for UI text. This says something like "Share this photo with"
-                    String title = getResources().getText(R.string.chooser_title).toString();
-                    // Create and start the chooser；为了显示chooser, 需要使用createChooser()来创建Intent
-                    Intent chooser = Intent.createChooser(intent, title);
-                    startActivity(chooser);
+//                    String title = getResources().getText(R.string.chooser_title).toString();
+//                    // Create and start the chooser；为了显示chooser, 需要使用createChooser()来创建Intent
+//                    Intent chooser = Intent.createChooser(intent, title);
+//                    startActivity(chooser);
+                    intent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+                    intent.setType("text/plain");
+                    startActivity(intent);
                     break;
                 default:
 
@@ -162,6 +170,7 @@ public class SendingUserAnotherAppActivity extends Activity {
         calendarIntent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
         calendarIntent.putExtra(CalendarContract.Events.TITLE, "Ninja class");
         calendarIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Secret dojo");
+        startActivity(calendarIntent);
     }
 
 }

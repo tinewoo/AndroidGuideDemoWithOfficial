@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.official.android.androidofficialguidedemo" >
-
+    <!--SD卡文件读写权限-->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--打电话权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
 
     <application
         android:allowBackup="true"
@@ -49,10 +52,18 @@
         <activity
             android:name=".SavingDataActivity"
             android:label="SavingDataActivity" >
+            <intent-filter>
+                <action android:name="official.guide.savingdata" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".InteractingOtherAppsActivity"
             android:label="@string/title_activity_interacting_other_apps" >
+            <intent-filter>
+                <action android:name="official.guide.interactingotherapps" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".interactingotherapps.SendingUserAnotherAppActivity"
@@ -61,6 +72,10 @@
         <activity
             android:name=".interactingotherapps.IntentResultActivity"
             android:label="@string/title_activity_intent_result" >
+        </activity>
+        <activity
+            android:name=".interactingotherapps.IntentFilterActivity"
+            android:label="@string/title_activity_intent_filter" >
         </activity>
     </application>
 

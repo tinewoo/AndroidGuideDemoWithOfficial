@@ -51,14 +51,14 @@ public class SavingPreferenceActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void writePreference(View v){
+    protected void writePreference(View v){
 //        SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt(getString(R.string.saved_high_score), 150);//随便指定了值
         editor.apply();//commit()是同步方法，apply()是异步方法，如果不需要返回值的话，可以完全用apply()替代commit()
     }
 
-    private void readPreference(View v){
+    protected void readPreference(View v){
         long defaultValue = getResources().getInteger(R.string.saved_high_score_default);
         long highScore = sharedPref.getInt(getString(R.string.saved_high_score), (int)defaultValue);
     }

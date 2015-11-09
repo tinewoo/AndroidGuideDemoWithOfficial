@@ -10,6 +10,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.official.android.androidofficialguidedemo.interactingotherapps.IntentFilterActivity;
+import com.official.android.androidofficialguidedemo.interactingotherapps.IntentResultActivity;
 import com.official.android.androidofficialguidedemo.interactingotherapps.SendingUserAnotherAppActivity;
 import com.official.android.androidofficialguidedemo.savingdata.SavingDatabaseActivity;
 import com.official.android.androidofficialguidedemo.savingdata.SavingFileActivity;
@@ -36,11 +38,11 @@ public class InteractingOtherAppsActivity extends Activity {
                         intent.setClass(InteractingOtherAppsActivity.this, SendingUserAnotherAppActivity.class);
                         break;
                     case 1:
-                        intent.setClass(InteractingOtherAppsActivity.this, SavingFileActivity.class);
+                        intent.setClass(InteractingOtherAppsActivity.this, IntentResultActivity.class);
 
                         break;
                     case 2:
-                        intent.setClass(InteractingOtherAppsActivity.this, SavingDatabaseActivity.class);
+                        intent.setClass(InteractingOtherAppsActivity.this, IntentFilterActivity.class);
 
                         break;
 

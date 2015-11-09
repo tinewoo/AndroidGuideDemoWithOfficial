@@ -17,5 +17,8 @@
     <string name="title_activity_sending_user_another_app">SendingUserAnotherAppActivity</string>
     <string name="chooser_title">Share this photo with</string>
     <string name="title_activity_intent_result">IntentResultActivity</string>
+    <string name="title_activity_intent_filter">IntentFilterActivity</string>
+
+    <string name="intent_filter_chinese_document">中文翻译文档地址：http://hukai.me/android-training-course-in-chinese/basics/intents/filters.html</string>
 
 </resources>
