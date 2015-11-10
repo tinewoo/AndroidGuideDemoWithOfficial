@@ -31,7 +31,8 @@ public class MainCatalogueActivity extends AppCompatActivity {
                 switch (position){
                     case 0: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue1);
                         bundle.putInt(ARRAY_INTENT_ACTION, R.array.intent_action_gettingstart); break;
-                    case 1: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue2); break;
+                    case 1: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue2);
+                        bundle.putInt(ARRAY_INTENT_ACTION, R.array.intent_action_appcontentsharing); break;
                     case 2: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue3); break;
                     case 3: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue4); break;
                     case 4: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue5); break;
@@ -46,7 +47,10 @@ public class MainCatalogueActivity extends AppCompatActivity {
                     case 13: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue14); break;
                     case 14: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue15); break;
                     case 15: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue16); break;
-                    case 16: bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue17); break;
+                    case 16:
+                        intent.setClass(MainCatalogueActivity.this, OtherListActivity.class);
+                        bundle.putInt(ARRAYRESOURCES, R.array.detail_catalogue17);
+                        bundle.putInt(ARRAY_INTENT_ACTION, R.array.intent_action_otherlist); ; break;
 
                     default: break;
                 }

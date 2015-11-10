@@ -161,6 +161,7 @@
 
     <string-array name="detail_catalogue17">
         <item>获取相册图片的绝对路径</item>
+        <item>文档翻译地址</item>
 
     </string-array>
 
@@ -176,6 +177,13 @@
         <item>Sending the User to Another App</item>
         <item>Getting a Result from an Activity</item>
         <item>Allowing Other Apps to Start Your Activity</item>
+
+    </string-array>
+
+    <string-array name="sharing_simple_data">
+        <item>Sending Simple Data to Other Apps</item>
+        <item>Receiving Simple Data from Other Apps</item>
+        <item>Adding an Easy Share Action</item>
 
     </string-array>
 
@@ -199,7 +207,7 @@
 
         <item>official.guide.sharingsimpledata</item>
         <item>official.guide.sharingfile</item>
-        <item>official.guide.addeasyshareaction</item>
+        <item>official.guide.sharingfilesnfc</item>
 
     </string-array>
 
@@ -221,6 +229,13 @@
     </string-array>
 
 
+    <string-array name="intent_action_otherlist">
+
+        <item>com.my.imageuri</item>
+        <item>com.my.documenttranslation</item>
+
+    </string-array>
+
 
     <string-array name="intent_action1">
 
@@ -241,5 +256,6 @@
         <!--<item>official.guide.savingdata.database</item>-->
 
     <!--</string-array>-->
+
 
 </resources>
