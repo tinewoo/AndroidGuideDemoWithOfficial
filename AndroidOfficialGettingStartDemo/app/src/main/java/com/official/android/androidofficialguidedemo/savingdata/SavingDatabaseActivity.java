@@ -1,5 +1,6 @@
 package com.official.android.androidofficialguidedemo.savingdata;
 
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -16,7 +17,7 @@ import android.view.View;
 
 import com.official.android.androidofficialguidedemo.R;
 
-public class SavingDatabaseActivity extends AppCompatActivity {
+public class SavingDatabaseActivity extends Activity {
 
     FeedReaderDbHelper mDbHelper;
     private static final String LOG_TAG = "SavingDatabaseActivity";
@@ -26,28 +27,6 @@ public class SavingDatabaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saving_database);
         mDbHelper = new FeedReaderDbHelper(this);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_saving_database, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     protected void insertSQLLiteData(View v){

@@ -82,14 +82,16 @@
         <activity
             android:name=".SharingSimpleDataActivity"
             android:label="@string/title_activity_sharing_simple_data" >
+            <intent-filter>
+                <action android:name="official.guide.sharingsimpledata" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".appcontentsharing.SharingSimpleDataActivity"
+            android:name=".appcontentsharing.SharingSimpleDataToAppActivity"
             android:label="@string/title_activity_sharing_simple_data" >
         </activity>
-
         <activity android:name=".OtherListActivity" />
-
         <activity
             android:name=".otherlist.DocumentTranslationActivity"
             android:label="@string/title_activity_document_translation" >
@@ -99,7 +101,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".appcontentsharing.ReceivingSimpleDataActivity"
+            android:label="@string/title_activity_receiving_simple_data" >
+        </activity>
+        <activity
+            android:name=".appcontentsharing.AddingEasyShareActionActivity"
+            android:label="@string/title_activity_adding_easy_share_action" >
+        </activity>
     </application>
 
 </manifest>
