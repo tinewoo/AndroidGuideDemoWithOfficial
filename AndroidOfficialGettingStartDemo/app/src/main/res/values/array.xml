@@ -186,6 +186,10 @@
         <item>Adding an Easy Share Action</item>
 
     </string-array>
+    
+    <string-array name="sharing_files_with_nfc">
+        <item>Sharing Files with NFC</item>
+    </string-array>
 
     <!-- Intent Action Name -->
 

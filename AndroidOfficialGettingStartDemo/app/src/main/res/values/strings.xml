@@ -24,5 +24,8 @@
     <string name="title_activity_document_translation">DocumentTranslationActivity</string>
     <string name="title_activity_receiving_simple_data">ReceivingSimpleDataActivity</string>
     <string name="title_activity_adding_easy_share_action">AddingEasyShareActionActivity</string>
+    <string name="title_activity_get_picture_file_path">GetPictureFilePathActivity</string>
+    <string name="title_activity_nfcsharing_files">NFCSharingFilesActivity</string>
+    <string name="nfcsharingfiles">客户端项目：Receiving Files from Another Device，服务端项目：Sending Files to Another Device</string>
 
 </resources>

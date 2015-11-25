@@ -84,6 +84,7 @@
             android:label="@string/title_activity_sharing_simple_data" >
             <intent-filter>
                 <action android:name="official.guide.sharingsimpledata" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -108,6 +109,23 @@
         <activity
             android:name=".appcontentsharing.AddingEasyShareActionActivity"
             android:label="@string/title_activity_adding_easy_share_action" >
+        </activity>
+        <activity
+            android:name=".otherlist.GetPictureFilePathActivity"
+            android:label="@string/title_activity_get_picture_file_path" >
+            <intent-filter>
+                <action android:name="com.my.imageuri" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".nfcsharingfiles.NFCSharingFilesActivity"
+            android:label="@string/title_activity_nfcsharing_files" >
+            <intent-filter>
+                <action android:name="official.guide.sharingfilesnfc" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 
