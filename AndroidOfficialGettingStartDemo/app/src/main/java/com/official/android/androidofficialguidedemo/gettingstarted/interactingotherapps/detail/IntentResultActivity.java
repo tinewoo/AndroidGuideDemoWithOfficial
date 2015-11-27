@@ -1,14 +1,11 @@
-package com.official.android.androidofficialguidedemo.interactingotherapps;
+package com.official.android.androidofficialguidedemo.gettingstarted.interactingotherapps.detail;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
 import com.official.android.androidofficialguidedemo.R;

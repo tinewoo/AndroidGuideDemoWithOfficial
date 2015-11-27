@@ -166,6 +166,7 @@
     </string-array>
 
     <!-- 小结列表-->
+    <!--所属章节：Android入门基础：从这里开始-->
     <string-array name="savingdata">
         <item>Saving Key-Value Sets</item>
         <item>Saving Files</item>
@@ -180,6 +181,7 @@
 
     </string-array>
 
+    <!--所属章节：Android分享操作-->
     <string-array name="sharing_simple_data">
         <item>Sending Simple Data to Other Apps</item>
         <item>Receiving Simple Data from Other Apps</item>
@@ -189,6 +191,27 @@
     
     <string-array name="sharing_files_with_nfc">
         <item>Sharing Files with NFC</item>
+    </string-array>
+
+    <!--所属章节：管理音频播放-->
+    <string-array name="managing_audio_playback">
+        <item>Managing Audio Playback</item>
+        <item>The Third Demo</item>
+    </string-array>
+
+    <!--所属章节：拍照-->
+    <string-array name="capturing_photos">
+        <item>Taking Photos simply</item>
+        <item>Recording Videos Simply</item>
+        <item>Controlling the Camera</item>
+
+    </string-array>
+    <!--所属章节：打印照片-->
+    <string-array name="printing_content">
+        <item>Photos</item>
+        <item>HTML Documents</item>
+        <item>Custom Documents</item>
+
     </string-array>
 
     <!-- Intent Action Name -->

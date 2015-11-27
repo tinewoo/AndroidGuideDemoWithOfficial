@@ -1,25 +1,31 @@
-package com.official.android.androidofficialguidedemo.nfcsharingfiles;
+package com.official.android.androidofficialguidedemo.multimedia.thethirddemo;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.official.android.androidofficialguidedemo.R;
 
-public class NFCSharingFilesActivity extends ActionBarActivity {
+public class MediaPlayerAfterLollipopActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nfcsharing_files);
+        setContentView(R.layout.activity_media_player_after_lollipop);
+
+        Intent intent = new Intent( getApplicationContext(), MediaPlayerService.class );
+        intent.setAction( MediaPlayerService.ACTION_PLAY );
+        startService( intent );
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_nfcsharing_files, menu);
+        getMenuInflater().inflate(R.menu.menu_media_player_after_lollipop, menu);
         return true;
     }
 

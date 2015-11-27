@@ -26,6 +26,11 @@
     <string name="title_activity_adding_easy_share_action">AddingEasyShareActionActivity</string>
     <string name="title_activity_get_picture_file_path">GetPictureFilePathActivity</string>
     <string name="title_activity_nfcsharing_files">NFCSharingFilesActivity</string>
-    <string name="nfcsharingfiles">客户端项目：Receiving Files from Another Device，服务端项目：Sending Files to Another Device</string>
+    <string name="nfcsharingfilesname">客户端项目：Receiving Files from Another Device，服务端项目：Sending Files to Another Device</string>
+    <string name="title_activity_server_client_demo_name">ServerClientDemoNameActivity</string>
+    <string name="title_activity_manage_audio">ManageAudioActivity</string>
+    <string name="identify_which_audio_tream">鉴别使用的是哪个音频流</string>
+    <string name="control_audio_volume_by_hardware_volumekeys">使用硬件音量键来控制应用的音量</string>
+    <string name="title_activity_media_player_after_lollipop">MediaPlayerAfterLollipopActivity</string>
 
 </resources>

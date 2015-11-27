@@ -1,4 +1,4 @@
-package com.official.android.androidofficialguidedemo.interactingotherapps;
+package com.official.android.androidofficialguidedemo.gettingstarted.interactingotherapps.detail;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -8,8 +8,6 @@ import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.CalendarContract;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;

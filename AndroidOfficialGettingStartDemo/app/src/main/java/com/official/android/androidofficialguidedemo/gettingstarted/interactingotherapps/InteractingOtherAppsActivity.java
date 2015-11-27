@@ -1,21 +1,17 @@
-package com.official.android.androidofficialguidedemo;
+package com.official.android.androidofficialguidedemo.gettingstarted.interactingotherapps;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.official.android.androidofficialguidedemo.interactingotherapps.IntentFilterActivity;
-import com.official.android.androidofficialguidedemo.interactingotherapps.IntentResultActivity;
-import com.official.android.androidofficialguidedemo.interactingotherapps.SendingUserAnotherAppActivity;
-import com.official.android.androidofficialguidedemo.savingdata.SavingDatabaseActivity;
-import com.official.android.androidofficialguidedemo.savingdata.SavingFileActivity;
-import com.official.android.androidofficialguidedemo.savingdata.SavingPreferenceActivity;
+import com.official.android.androidofficialguidedemo.R;
+import com.official.android.androidofficialguidedemo.gettingstarted.interactingotherapps.detail.IntentFilterActivity;
+import com.official.android.androidofficialguidedemo.gettingstarted.interactingotherapps.detail.IntentResultActivity;
+import com.official.android.androidofficialguidedemo.gettingstarted.interactingotherapps.detail.SendingUserAnotherAppActivity;
 
 
 public class InteractingOtherAppsActivity extends Activity {

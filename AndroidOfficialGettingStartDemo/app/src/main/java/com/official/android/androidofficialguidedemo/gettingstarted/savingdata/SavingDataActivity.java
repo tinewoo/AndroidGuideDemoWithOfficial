@@ -1,4 +1,4 @@
-package com.official.android.androidofficialguidedemo;
+package com.official.android.androidofficialguidedemo.gettingstarted.savingdata;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,9 +8,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.official.android.androidofficialguidedemo.savingdata.SavingDatabaseActivity;
-import com.official.android.androidofficialguidedemo.savingdata.SavingFileActivity;
-import com.official.android.androidofficialguidedemo.savingdata.SavingPreferenceActivity;
+import com.official.android.androidofficialguidedemo.R;
+import com.official.android.androidofficialguidedemo.gettingstarted.savingdata.detail.SavingDatabaseActivity;
+import com.official.android.androidofficialguidedemo.gettingstarted.savingdata.detail.SavingFileActivity;
+import com.official.android.androidofficialguidedemo.gettingstarted.savingdata.detail.SavingPreferenceActivity;
 
 /**
  * Created by user on 15/11/5.

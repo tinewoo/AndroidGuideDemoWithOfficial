@@ -1,23 +1,17 @@
-package com.official.android.androidofficialguidedemo;
+package com.official.android.androidofficialguidedemo.contentsharing;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.official.android.androidofficialguidedemo.appcontentsharing.AddingEasyShareActionActivity;
-import com.official.android.androidofficialguidedemo.appcontentsharing.ReceivingSimpleDataActivity;
-import com.official.android.androidofficialguidedemo.appcontentsharing.SharingSimpleDataToAppActivity;
-import com.official.android.androidofficialguidedemo.savingdata.SavingDatabaseActivity;
-import com.official.android.androidofficialguidedemo.savingdata.SavingFileActivity;
-import com.official.android.androidofficialguidedemo.savingdata.SavingPreferenceActivity;
+import com.official.android.androidofficialguidedemo.R;
+import com.official.android.androidofficialguidedemo.contentsharing.appcontentsharing.AddingEasyShareActionActivity;
+import com.official.android.androidofficialguidedemo.contentsharing.appcontentsharing.ReceivingSimpleDataActivity;
+import com.official.android.androidofficialguidedemo.contentsharing.appcontentsharing.SharingSimpleDataToAppActivity;
 
 
 public class SharingSimpleDataActivity extends Activity {

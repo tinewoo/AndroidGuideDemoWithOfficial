@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 打电话权限 -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--MEDIA:播放音乐权限-->
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
 
     <application
         android:allowBackup="true"
@@ -37,20 +39,11 @@
         <!-- <category android:name="android.intent.category.DEFAULT" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
+
+
+        <!-- SavingDataActivity -->
         <activity
-            android:name=".savingdata.SavingPreferenceActivity"
-            android:label="@string/title_activity_saving_preference" >
-        </activity>
-        <activity
-            android:name=".savingdata.SavingFileActivity"
-            android:label="@string/title_activity_saving_file" >
-        </activity>
-        <activity
-            android:name=".savingdata.SavingDatabaseActivity"
-            android:label="@string/title_activity_saving_database" >
-        </activity>
-        <activity
-            android:name=".SavingDataActivity"
+            android:name=".gettingstarted.savingdata.SavingDataActivity"
             android:label="SavingDataActivity" >
             <intent-filter>
                 <action android:name="official.guide.savingdata" />
@@ -59,7 +52,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".InteractingOtherAppsActivity"
+            android:name=".gettingstarted.savingdata.detail.SavingPreferenceActivity"
+            android:label="@string/title_activity_saving_preference" >
+        </activity>
+        <activity
+            android:name=".gettingstarted.savingdata.detail.SavingFileActivity"
+            android:label="@string/title_activity_saving_file" >
+        </activity>
+        <activity
+            android:name=".gettingstarted.savingdata.detail.SavingDatabaseActivity"
+            android:label="@string/title_activity_saving_database" >
+        </activity>
+        <!-- InteractingOtherAppsActivity -->
+        <activity
+            android:name=".gettingstarted.interactingotherapps.InteractingOtherAppsActivity"
             android:label="@string/title_activity_interacting_other_apps" >
             <intent-filter>
                 <action android:name="official.guide.interactingotherapps" />
@@ -68,19 +74,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".interactingotherapps.SendingUserAnotherAppActivity"
+            android:name=".gettingstarted.interactingotherapps.detail.SendingUserAnotherAppActivity"
             android:label="@string/title_activity_sending_user_another_app" >
         </activity>
         <activity
-            android:name=".interactingotherapps.IntentResultActivity"
+            android:name=".gettingstarted.interactingotherapps.detail.IntentResultActivity"
             android:label="@string/title_activity_intent_result" >
         </activity>
         <activity
-            android:name=".interactingotherapps.IntentFilterActivity"
+            android:name=".gettingstarted.interactingotherapps.detail.IntentFilterActivity"
             android:label="@string/title_activity_intent_filter" >
         </activity>
+        <!-- SharingSimpleDataActivity -->
         <activity
-            android:name=".SharingSimpleDataActivity"
+            android:name=".contentsharing.SharingSimpleDataActivity"
             android:label="@string/title_activity_sharing_simple_data" >
             <intent-filter>
                 <action android:name="official.guide.sharingsimpledata" />
@@ -89,9 +96,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".appcontentsharing.SharingSimpleDataToAppActivity"
+            android:name=".contentsharing.appcontentsharing.SharingSimpleDataToAppActivity"
             android:label="@string/title_activity_sharing_simple_data" >
         </activity>
+        <activity
+            android:name=".contentsharing.appcontentsharing.ReceivingSimpleDataActivity"
+            android:label="@string/title_activity_receiving_simple_data" >
+        </activity>
+        <activity
+            android:name=".contentsharing.appcontentsharing.AddingEasyShareActionActivity"
+            android:label="@string/title_activity_adding_easy_share_action" >
+        </activity>
+        <!-- OtherListActivity -->
         <activity android:name=".OtherListActivity" />
         <activity
             android:name=".otherlist.DocumentTranslationActivity"
@@ -103,14 +119,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".appcontentsharing.ReceivingSimpleDataActivity"
-            android:label="@string/title_activity_receiving_simple_data" >
-        </activity>
-        <activity
-            android:name=".appcontentsharing.AddingEasyShareActionActivity"
-            android:label="@string/title_activity_adding_easy_share_action" >
-        </activity>
-        <activity
             android:name=".otherlist.GetPictureFilePathActivity"
             android:label="@string/title_activity_get_picture_file_path" >
             <intent-filter>
@@ -119,13 +127,40 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <!-- NFCSharingFilesActivity -->
         <activity
-            android:name=".nfcsharingfiles.NFCSharingFilesActivity"
+            android:name=".NFCActivity"
             android:label="@string/title_activity_nfcsharing_files" >
             <intent-filter>
                 <action android:name="official.guide.sharingfilesnfc" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ServerClientDemoName.ServerClientDemoNameActivity"
+            android:label="@string/title_activity_server_client_demo_name" >
+        </activity>
+        <activity
+            android:name=".multimedia.manageaudioplayback.ManageAudioActivity"
+            android:label="@string/title_activity_manage_audio" >
+        </activity>
+
+        <receiver android:name=".multimedia.manageaudioplayback.RemoteControlReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".multimedia.manageaudioplayback.NoisyAudioStreamReceiver" >
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".multimedia.thethirddemo.MediaPlayerAfterLollipopActivity"
+            android:label="@string/title_activity_media_player_after_lollipop" >
         </activity>
     </application>
 

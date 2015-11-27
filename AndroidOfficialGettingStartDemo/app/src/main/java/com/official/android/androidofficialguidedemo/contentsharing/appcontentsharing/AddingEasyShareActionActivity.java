@@ -1,4 +1,4 @@
-package com.official.android.androidofficialguidedemo.appcontentsharing;
+package com.official.android.androidofficialguidedemo.contentsharing.appcontentsharing;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
