@@ -32,5 +32,6 @@
     <string name="identify_which_audio_tream">鉴别使用的是哪个音频流</string>
     <string name="control_audio_volume_by_hardware_volumekeys">使用硬件音量键来控制应用的音量</string>
     <string name="title_activity_media_player_after_lollipop">MediaPlayerAfterLollipopActivity</string>
+    <string name="title_activity_file_manager">FileManagerActivity</string>
 
 </resources>

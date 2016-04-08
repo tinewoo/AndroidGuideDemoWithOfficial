@@ -23,25 +23,25 @@ public class SavingFileActivity extends Activity {
         setContentView(R.layout.activity_saving_file);
     }
 
-    protected void getInternalStoragePath(View v){
+    public void getInternalStoragePath(View v){
         TextView tv_internal_storage = (TextView)findViewById(R.id.tv_internal_storage);
         tv_internal_storage.setText(getFilesDir().toString());
     }
 
-    protected void getCachePath(View v){
+    public void getCachePath(View v){
         TextView tv_cache_storage = (TextView)findViewById(R.id.tv_cache_storage);
         tv_cache_storage.setText(getCacheDir().toString());
     }
-    protected void getExternalStoragePath(View v){
+    public void getExternalStoragePath(View v){
         TextView tv_external_storage = (TextView)findViewById(R.id.tv_external_storage);
         //DIRECTORY_RINGTONES 表示文件就会被系统的media scanner认为是ringtone而不是音乐
         tv_external_storage.setText(getExternalFilesDir(Environment.DIRECTORY_PICTURES).toString());
     }
-    protected void createFile(View v){
+    public void createFile(View v){
         String filename = "test";
         File file = new File(getFilesDir(), filename);
     }
-    protected void writeInternalStorageFile(View v){
+    public void writeInternalStorageFile(View v){
         String filename = "myfile";
         String string = "Hello world!";
         FileOutputStream outputStream;
@@ -55,7 +55,7 @@ public class SavingFileActivity extends Activity {
         }
     }
 
-    protected void deleteFile(View v){
+    public void deleteFile(View v){
         String filename = "myfile";
         //方法一
 //        File myFile = new File(getFilesDir(), filename);
@@ -64,20 +64,20 @@ public class SavingFileActivity extends Activity {
         deleteFile(getFilesDir().toString() + File.separator + filename);
     }
 
-    protected void getExternalStorageState(View v){
+    public void getExternalStorageState(View v){
         isExternalStorageWritable();
         isExternalStorageReadable();
     }
 
-    protected void savePublicFile(View v){
+    public void savePublicFile(View v){
         getAlbumStorageDir("test");
     }
 
-    protected void savePrivateFile(View v){
+    public void savePrivateFile(View v){
         getAlbumStorageDir(this, "test");
     }
 
-    protected void getSpace(View v){
+    public void getSpace(View v){
         File file = new File(Environment.getRootDirectory().toString());
         long freeSpace = file.getFreeSpace();
         long totalSpace = file.getTotalSpace();
@@ -85,7 +85,7 @@ public class SavingFileActivity extends Activity {
     }
 
     //获取常用路径，不同品牌手机的路径可能不会一样
-    protected void getPath(View v){
+    public void getPath(View v){
         Log.i(LOG_TAG, "getFilesDir = " + getFilesDir());
         Log.i(LOG_TAG, "getExternalFilesDir = " + getExternalFilesDir("exter_test").getAbsolutePath());
         Log.i(LOG_TAG, "getDownloadCacheDirectory = " + Environment.getDownloadCacheDirectory().getAbsolutePath());

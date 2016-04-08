@@ -14,18 +14,18 @@ public class MediaPlayerAfterLollipopActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_media_player_after_lollipop);
+//        setContentView(R.layout.activity_media_player_after_lollipop);
 
-        Intent intent = new Intent( getApplicationContext(), MediaPlayerService.class );
-        intent.setAction( MediaPlayerService.ACTION_PLAY );
-        startService( intent );
+//        Intent intent = new Intent( getApplicationContext(), MediaPlayerService.class );
+//        intent.setAction( MediaPlayerService.ACTION_PLAY );
+//        startService( intent );
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_media_player_after_lollipop, menu);
+//        getMenuInflater().inflate(R.menu.menu_media_player_after_lollipop, menu);
         return true;
     }
 
@@ -37,9 +37,9 @@ public class MediaPlayerAfterLollipopActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }
