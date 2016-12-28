@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  根目录  -->
+    <string-array name="main_catalogue">
+        <item>Android入门基础：从这里开始</item>
+        <item>Android分享操作</item>
+        <item>Android多媒体</item>
+        <item>Android图像与动画</item>
+        <item>Android网络连接与云服务</item>
+        <item>Android联系人与位置信息</item>
+        <item>Android可穿戴应用</item>
+        <item>Android企业级应用</item>
+        <item>Android TV应用</item>
+        <item>Android交互设计</item>
+        <item>Android界面设计</item>
+        <item>Android用户输入</item>
+        <item>Android后台任务</item>
+        <item>Android性能优化</item>
+        <item>Android安全与隐私</item>
+        <item>Android测试程序</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <!--  第二层  -->
+
+    <string-array name="detail_catalogue1">
+        <item>建立你的第一个App</item>
+        <item>添加ActionBar</item>
+        <item>兼容不同的设备</item>
+        <item>管理Activity的生命周期</item>
+        <item>使用Fragment建立动态的UI</item>
+        <item>数据保存</item>
+        <item>与其他应用的交互</item>
+        <item>系统运行权限</item>     <!--  新文档  !-->
+
+    </string-array>
+
+    <string-array name="detail_catalogue2">
+        <item>分享简单的数据</item>
+        <item>分享文件</item>
+        <item>使用NFC分享文件</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue3">
+        <item>管理音频播放</item>
+        <item>拍照</item>
+        <item>打印</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue4">
+        <item>高效显示Bitmap</item>
+        <item>使用OpenGL ES显示图像</item>
+        <item>动画视图使用场景和转换</item>    <!--  新文档  !-->
+        <item>添加动画</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue5">
+        <item>无线连接设备</item>
+        <item>网络连接操作</item>
+        <item>高效下载</item>
+        <item>使用Sync Adapter传输数据</item>
+        <item>使用Volley执行网络数据传输</item>
+        <item>云同步</item>
+        <item>解决云同步的保存冲突</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue6">
+        <item>Android联系人信息</item>
+        <item>Android位置信息</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue7">
+        <item>赋予Notification可穿戴的特性</item>
+        <item>创建可穿戴的应用</item>
+        <item>创建自定义的UI</item>
+        <item>发送并同步数据</item>
+        <item>创建表盘</item>
+        <item>位置检测</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue8">
+        <item>Ensuring Compatibility with Managed Profiles</item>
+        <item>Implementing App Restrictions</item>
+        <item>Building a Work Policy Controller</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue9">
+        <item>创建TV应用</item>
+        <item>创建TV播放应用</item>
+        <item>帮助用户在TV上探索内容</item>
+        <item>创建TV游戏应用</item>
+        <item>创建TV直播应用</item>
+        <item>TV应用清单</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue10">
+        <item>设计高效的导航</item>
+        <item>实现高效的导航</item>
+        <item>通知提示用户</item>
+        <item>增加搜索功能</item>
+        <item>使得你的App内容可被Google搜索</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue11">
+        <item>为多屏幕设计</item>
+        <item>创建自定义View</item>
+        <item>创建向后兼容的UI</item>
+        <item>实现辅助功能</item>
+        <item>管理系统UI</item>
+        <item>创建Material Design的应用</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue12">
+        <item>使用触摸手势</item>
+        <item>处理键盘输入</item>
+        <item>支持游戏控制器</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue13">
+        <item>在IntentService中执行后台任务</item>
+        <item>在后台加载数据</item>
+        <item>管理设备的唤醒状态</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue14">
+        <item>管理应用的内存</item>
+        <item>性能优化Tips</item>
+        <item>提升Layout的性能</item>
+        <item>优化电池寿命</item>
+        <item>多线程操作</item>
+        <item>避免程序无响应ANR</item>
+        <item>JNI Tips</item>
+        <item>优化多核处理器(SMP)下的Android程序</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue15">
+        <item>Security Tips</item>
+        <item>使用HTTPS与SSL</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue16">
+        <item>测试你的Activity</item>
+
+    </string-array>
+
+    <string-array name="detail_catalogue17">
+        <item>获取相册图片的绝对路径</item>
+        <item>文档翻译地址</item>
+
+    </string-array>
+
+    <!-- 小结列表-->
+    <!--所属章节：Android入门基础：从这里开始-->
+    <string-array name="savingdata">
+        <item>Saving Key-Value Sets</item>
+        <item>Saving Files</item>
+        <item>Saving Data in SQL Databases</item>
+
+    </string-array>
+
+    <string-array name="interactingwithotherapps">
+        <item>Sending the User to Another App</item>
+        <item>Getting a Result from an Activity</item>
+        <item>Allowing Other Apps to Start Your Activity</item>
+
+    </string-array>
+
+    <!--所属章节：Android分享操作-->
+    <string-array name="sharing_simple_data">
+        <item>Sending Simple Data to Other Apps</item>
+        <item>Receiving Simple Data from Other Apps</item>
+        <item>Adding an Easy Share Action</item>
+
+    </string-array>
+    
+    <string-array name="sharing_files_with_nfc">
+        <item>Sharing Files with NFC</item>
+    </string-array>
+
+    <!--所属章节：管理音频播放-->
+    <string-array name="managing_audio_playback">
+        <item>Managing Audio Playback</item>
+        <item>The Third Demo</item>
+    </string-array>
+
+    <!--所属章节：拍照-->
+    <string-array name="capturing_photos">
+        <item>Taking Photos simply</item>
+        <item>Recording Videos Simply</item>
+        <item>Controlling the Camera</item>
+
+    </string-array>
+    <!--所属章节：打印照片-->
+    <string-array name="printing_content">
+        <item>Photos</item>
+        <item>HTML Documents</item>
+        <item>Custom Documents</item>
+
+    </string-array>
+
+    <!-- Intent Action Name -->
+
+    <string-array name="intent_action_gettingstart">
+
+        <item>official.guide.buildfirstapp</item>
+        <item>official.guide.addactionbar</item>
+        <item>official.guide.differentdevices</item>
+        <item>official.guide.managingtheactivitylifecycle</item>
+        <item>official.guide.buildingdynamicfragments</item>
+
+        <item>official.guide.savingdata</item>
+        <item>official.guide.interactingotherapps</item>
+        <item>official.guide.systempermissions</item>
+
+    </string-array>
+
+    <string-array name="intent_action_appcontentsharing">
+
+        <item>official.guide.sharingsimpledata</item>
+        <item>official.guide.sharingfile</item>
+        <item>official.guide.sharingfilesnfc</item>
+
+    </string-array>
+
+    <string-array name="intent_action_multimedia">
+
+        <item>official.guide.managingaudioplayback</item>
+        <item>official.guide.capturingphotos</item>
+        <item>official.guide.printingcontent</item>
+
+    </string-array>
+
+    <string-array name="intent_action_graphicsandanimation">
+
+        <item>official.guide.displayingbitmapsefficiently</item>
+        <item>official.guide.displayinggraphicswithopengles</item>
+        <item>official.guide.animatingviewsusingscenesandtransitions</item>
+        <item>official.guide.addinganimations</item>
+
+    </string-array>
+
+
+    <string-array name="intent_action_otherlist">
+
+        <item>com.my.imageuri</item>
+        <item>com.my.documenttranslation</item>
+
+    </string-array>
+
+
+    <string-array name="intent_action1">
+
+        <item>official.guide.buildfirstapp</item>
+        <item>official.guide.addactionbar</item>
+        <item>official.guide.differentdevices</item>
+        <item>official.guide.managingtheactivitylifecycle</item>
+        <item>official.guide.buildingdynamicfragments</item>
+
+        <item>official.guide.savingdata</item>
+        <item>official.guide.interactingotherapps</item>
+
+    </string-array>
+
+    <!--<string-array name="intent_action1_6">-->
+        <!--<item>official.guide.savingdata.preferences</item>-->
+        <!--<item>official.guide.savingdata.file</item>-->
+        <!--<item>official.guide.savingdata.database</item>-->
+
+    <!--</string-array>-->
+
+
+</resources>
