@@ -5,8 +5,24 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
         <option name="gradleHome" value="E:\software\private\android-studio-ide-141.2178183-windows\android-studio\gradle\gradle-2.4" />
+=======
+>>>>>>> testmarge-dev
         <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+<<<<<<< HEAD
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
+
+=======
+        <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
@@ -16,4 +32,4 @@
     </option>
   </component>
 </project>
-
+>>>>>>> testmarge-dev

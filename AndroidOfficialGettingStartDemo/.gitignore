@@ -1,7 +1,16 @@
+# Gradle files
 .gradle
+
+# Local configuration file (sdk path, etc)
 /local.properties
+
 /.idea/workspace.xml
 /.idea/libraries
+
+# OSX files
 .DS_Store
+
 /build
+
+# Android Studio captures folder
 /captures
