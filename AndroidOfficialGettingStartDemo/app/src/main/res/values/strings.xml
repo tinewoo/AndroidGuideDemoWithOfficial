@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidOfficialGettingStartDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail_catalogue">DetailCatalogueActivity</string>
+    <string name="title_activity_saving_preference">SavingPreferenceActivity</string>
+    <string name="title_activity_saving_file">SavingFileActivity</string>
+    <string name="title_activity_saving_database">SavingDatabaseActivity</string>
+    <string name="preference_file_key">com.example.myapp.PREFERENCE_FILE_KEY</string>
+    <string name="saved_high_score">保存屏幕高度</string>
+    <string name="saved_high_score_default">1920</string>
+    <!-- <integer name="saved_high_score_default">1920</integer> -->
+    <string name="savingdatainfo">文件存储位置有两种：Internal storage（内部）和External storage（外部）；外部文件又有两种：private（私有文件）和public（共有文件）</string>
+    <string name="title_activity_interacting_other_apps">InteractingOtherAppsActivity</string>
+    <string name="title_activity_sending_user_another_app">SendingUserAnotherAppActivity</string>
+    <string name="chooser_title">Share this photo with</string>
+    <string name="title_activity_intent_result">IntentResultActivity</string>
+    <string name="title_activity_intent_filter">IntentFilterActivity</string>
+    <string name="intent_filter_chinese_document">中文翻译文档地址：http://hukai.me/android-training-course-in-chinese/basics/intents/filters.html</string>
+    <string name="title_activity_sharing_simple_data">SharingSimpleDataActivity</string>
+    <string name="send_to">发送给</string>
+    <string name="title_activity_document_translation">DocumentTranslationActivity</string>
+    <string name="title_activity_receiving_simple_data">ReceivingSimpleDataActivity</string>
+    <string name="title_activity_adding_easy_share_action">AddingEasyShareActionActivity</string>
+    <string name="title_activity_get_picture_file_path">GetPictureFilePathActivity</string>
+    <string name="title_activity_nfcsharing_files">NFCSharingFilesActivity</string>
+    <string name="nfcsharingfilesname">客户端项目：Receiving Files from Another Device，服务端项目：Sending Files to Another Device</string>
+    <string name="title_activity_server_client_demo_name">ServerClientDemoNameActivity</string>
+    <string name="title_activity_manage_audio">ManageAudioActivity</string>
+    <string name="identify_which_audio_tream">鉴别使用的是哪个音频流</string>
+    <string name="control_audio_volume_by_hardware_volumekeys">使用硬件音量键来控制应用的音量</string>
+    <string name="title_activity_media_player_after_lollipop">MediaPlayerAfterLollipopActivity</string>
+    <string name="title_activity_file_manager">FileManagerActivity</string>
+
+</resources>
