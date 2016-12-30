@@ -16,7 +16,6 @@ public class MainCatalogueActivity extends AppCompatActivity {
     public static final String ARRAYRESOURCES = "arrayResources";//list item
     public static final String ARRAY_INTENT_ACTION = "arrayIntentAction";//intent
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
